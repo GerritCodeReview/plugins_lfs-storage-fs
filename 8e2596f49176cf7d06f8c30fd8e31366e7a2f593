@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5b27ab98_86d5eade",
+        "filename": "BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-12-02T17:01:18Z",
+      "side": 1,
+      "message": "Not needed. These artifacts are already contained in the plugin-api and in gerrit core. Adding transitive dependency here would mean, that the plugin also include them in shadow-JAR, and when the plugin is deployed in gerrit site, these artifacts are duplicated, once in core and once in plugin.",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 13,
+        "endChar": 4
+      },
+      "revId": "8e2596f49176cf7d06f8c30fd8e31366e7a2f593",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1b48d34e_4c86bffa",
+        "filename": "lib/jgit/BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2015-12-02T17:01:18Z",
+      "side": 1,
+      "message": "Sorry, I reviewed this change, before I\u0027ve seen the corresponding change in Gerrit core. See my comments in: [1]. This file is not needed and can be removed.\n\n* [1] https://gerrit-review.googlesource.com/#/c/72891/2/gerrit-server/BUCK",
+      "revId": "8e2596f49176cf7d06f8c30fd8e31366e7a2f593",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
