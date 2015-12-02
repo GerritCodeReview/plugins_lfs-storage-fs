@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60fcbc2b_1eacedb0",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/HttpModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2015-12-02T14:01:33Z",
+      "side": 1,
+      "message": "Question: wouldn\u0027t this expose LFS without the authentication?  I thought the servlet was already bound using the extension point, so this seems redundant...",
+      "range": {
+        "startLine": 22,
+        "startChar": 4,
+        "endLine": 22,
+        "endChar": 46
+      },
+      "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
