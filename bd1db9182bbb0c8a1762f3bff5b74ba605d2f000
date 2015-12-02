@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "5b27ab98_067c9ac6",
+        "filename": "lib/jgit/BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2015-12-02T16:11:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b27ab98_064e5aba",
+      "range": {
+        "startLine": 11,
+        "startChar": 11,
+        "endLine": 11,
+        "endChar": 17
+      },
+      "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1b48d34e_ac3e4309",
         "filename": "lib/jgit/BUCK",
         "patchSetId": 1
@@ -83,6 +107,30 @@
       "writtenOn": "2015-12-02T15:12:04Z",
       "side": 1,
       "message": "This is not needed, as it transitively depends on it already through :jgit-lfs.",
+      "range": {
+        "startLine": 24,
+        "startChar": 10,
+        "endLine": 24,
+        "endChar": 18
+      },
+      "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b27ab98_267996d7",
+        "filename": "lib/jgit/BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2015-12-02T16:11:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1b48d34e_ac3e4309",
       "range": {
         "startLine": 24,
         "startChar": 10,
