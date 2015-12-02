@@ -22,6 +22,30 @@
       "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b27ab98_c60e027c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/HttpModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2015-12-02T14:10:18Z",
+      "side": 1,
+      "message": "This is a different servlet. There are two servlet in the game: LfsProtocolServlet and the LfsContentServlet.\n\nThe LfsProtocolServlet is bound in Gerrit core. It handles the LFS protocol and is protected the same way as git-over-http servlet.\n\nThe LfsContentServlet is just a dumb content storage plus it is able to tell the protocol servlet how to generate URL\u0027s for uploading large files.\n\nYes, the LfsContentServlet is not (yet) protected. This can be added in a followup change. There could be use cases where authorization on reading large files is not necessary... so this code is already useful for this scenario.\n\nWe don\u0027t want to, and cannot, impose particular authentication scheme on the blob storage by Gerrit core. It should be done by each concrete plugin.\nUploading/downloading of the large files will not necessarily be streamed through Gerrit or even through a plugin. In case of Amazon S3 the plugin would just generate a (temporary) link to the object in the S3 storage and the upload/download would go directly between the git-lfs client and Amazon S3 server.",
+      "parentUuid": "60fcbc2b_1eacedb0",
+      "range": {
+        "startLine": 22,
+        "startChar": 4,
+        "endLine": 22,
+        "endChar": 46
+      },
+      "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
