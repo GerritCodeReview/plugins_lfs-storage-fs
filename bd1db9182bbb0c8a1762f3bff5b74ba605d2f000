@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1b48d34e_2c06d362",
+        "filename": "lib/jgit/BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2015-12-02T14:50:45Z",
+      "side": 1,
+      "message": "\u003e how about JGIT_VERS?\n\nThe JGIT_ context is already assumed as we are inside /lib/jgit. In that sense VERS is enough. The same name is used in Gerrit core inside /lib/jgit.",
+      "parentUuid": "5b27ab98_2606f662",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 4
+      },
+      "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "60fcbc2b_1eacedb0",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/HttpModule.java",
         "patchSetId": 1
