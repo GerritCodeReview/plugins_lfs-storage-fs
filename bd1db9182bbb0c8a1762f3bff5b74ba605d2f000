@@ -46,6 +46,30 @@
       "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b30efcd_67b9d2ec",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/HttpModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2015-12-02T14:23:47Z",
+      "side": 1,
+      "message": "OK.  Makes sense (I overlooked the LfsContentServlet vs. LfsProtocolServlet)!\n\nIn this case, maybe the answer is similar to the S3 case: generate a temporary token to the blob and \"authenticate\" to a particular user with that.  Not sure we can use the current Session backends for that, but it\u0027d be nice if we could... otherwise, it may require some extra side-storage (H2 or similar) to map the token to a username and expiration.  But that can definitely come later!",
+      "parentUuid": "5b27ab98_c60e027c",
+      "range": {
+        "startLine": 22,
+        "startChar": 4,
+        "endLine": 22,
+        "endChar": 46
+      },
+      "revId": "bd1db9182bbb0c8a1762f3bff5b74ba605d2f000",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
