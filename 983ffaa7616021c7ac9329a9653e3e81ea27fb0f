@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bd342467_25b5b8f9",
+        "filename": "BUCK",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-02-15T06:10:12Z",
+      "side": 1,
+      "message": "These lines are not necessary and should be removed. gerrit_plugin() add dependency on plugin-api (and on plugin-wgtui, when your plugin exposes GWT UI module). plugin-api would include new JGit lfs support, both lfs and lfs-server. That\u0027s because gerrit-server and gerrit-httpd transitively depend on them.\n\nThat why standalone build mode would only need plugin-api to be consumed (from the Maven Central or local Maven repository) and would already work. The only missing part is to export the new dependencies in gerrit-plugin-api:lib to be visible in plugin in-tree mode. Here is the place, where jgit core dep in core is listed:\n\n  java_library(\n  name \u003d \u0027lib\u0027,\n  exported_deps \u003d PLUGIN_API + [\n    \u0027//gerrit-antlr:query_exception\u0027,\n    [...]\n    \u0027@jgit//:jgit\u0027,\n  ],\n\nListing here new JGit lfs stuff, would allow all plugins to \"see\" them through plugin API.",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 13,
+        "endChar": 4
+      },
+      "revId": "983ffaa7616021c7ac9329a9653e3e81ea27fb0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd342467_45b23c13",
+        "filename": "lib/jgit/BUCK",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-02-15T06:10:12Z",
+      "side": 1,
+      "message": "This file is not used an can be removed. This change only supports in-tree build and in this case the file from gerrit tree would be used. But even when this plugin add support for stanalone build mode, this is not how JGit dependency should be pulled in: it should be consumed through plugin-api. See my comment in root BUCK file.",
+      "revId": "983ffaa7616021c7ac9329a9653e3e81ea27fb0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
