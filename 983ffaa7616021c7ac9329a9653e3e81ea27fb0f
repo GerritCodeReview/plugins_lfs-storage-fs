@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "bd342467_65f3c091",
+        "filename": "BUCK",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2016-02-16T00:41:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bd342467_25b5b8f9",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 13,
+        "endChar": 4
+      },
+      "revId": "983ffaa7616021c7ac9329a9653e3e81ea27fb0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bd342467_45b23c13",
         "filename": "lib/jgit/BUCK",
         "patchSetId": 6
@@ -36,6 +60,24 @@
       "writtenOn": "2016-02-15T06:10:12Z",
       "side": 1,
       "message": "This file is not used an can be removed. This change only supports in-tree build and in this case the file from gerrit tree would be used. But even when this plugin add support for stanalone build mode, this is not how JGit dependency should be pulled in: it should be consumed through plugin-api. See my comment in root BUCK file.",
+      "revId": "983ffaa7616021c7ac9329a9653e3e81ea27fb0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd342467_85f04484",
+        "filename": "lib/jgit/BUCK",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2016-02-16T00:41:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bd342467_45b23c13",
       "revId": "983ffaa7616021c7ac9329a9653e3e81ea27fb0f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
