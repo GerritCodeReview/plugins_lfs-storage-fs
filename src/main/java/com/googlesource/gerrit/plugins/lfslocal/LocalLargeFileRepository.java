@@ -14,20 +14,62 @@
 
 package com.googlesource.gerrit.plugins.lfslocal;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
-import org.eclipse.jgit.lfs.server.fs.FileLfsRepository;
-
+import com.google.common.base.Strings;
 import com.google.gerrit.extensions.annotations.PluginCanonicalWebUrl;
 import com.google.gerrit.extensions.annotations.PluginData;
+import com.google.gerrit.extensions.annotations.PluginName;
+import com.google.gerrit.server.config.PluginConfigFactory;
 import com.google.inject.Inject;
 
+import org.eclipse.jgit.lfs.server.fs.FileLfsRepository;
+import org.eclipse.jgit.lib.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class LocalLargeFileRepository extends FileLfsRepository {
+  private static final Logger LOG =
+      LoggerFactory.getLogger(LocalLargeFileRepository.class);
 
   @Inject
-  LocalLargeFileRepository(@PluginCanonicalWebUrl String url,
-      @PluginData Path dataDir) throws IOException {
-    super(url, dataDir);
+  LocalLargeFileRepository(PluginConfigFactory cfg,
+      @PluginName String pluginName,
+      @PluginCanonicalWebUrl String url,
+      @PluginData Path defaultDataDir) throws IOException {
+    super(url, getOrCreateDataDir(cfg, pluginName, defaultDataDir));
+  }
+
+  private static Path getOrCreateDataDir(PluginConfigFactory cfgFactory,
+      String pluginName, Path defaultDataDir) {
+    Config cfg = cfgFactory.getGlobalPluginConfig(pluginName);
+    String dataDir = cfg.getString("storage", null, "dataDirectory");
+    if (Strings.isNullOrEmpty(dataDir)) {
+      return defaultDataDir;
+    }
+
+    try {
+      Path dataPath = Paths.get(dataDir);
+
+      // note that the following method not only creates missing
+      // directory/directories but throws exception when path
+      // exists and points to file
+      Path ensured = Files.createDirectories(dataPath);
+
+      // we should at least make sure that directory is readable
+      if (!Files.isReadable(ensured)) {
+        throw new IOException("Path '" + ensured.toAbsolutePath()
+            + "' cannot be accessed");
+      }
+
+      return ensured;
+    } catch (IOException e) {
+      LOG.error("Ensuring data directory '{}' for plugin '{}' failed.",
+          dataDir, pluginName, e);
+      throw new RuntimeException(e);
+    }
   }
 }
