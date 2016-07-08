@@ -79,6 +79,24 @@
       "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a87c4d1_e13186fb",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2016-07-08T20:45:14Z",
+      "side": 1,
+      "message": "also mention explicitly what the default data directory is",
+      "parentUuid": "5a87c4d1_e1b6669b",
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
