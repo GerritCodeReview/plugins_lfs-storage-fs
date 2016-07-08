@@ -14,20 +14,50 @@
 
 package com.googlesource.gerrit.plugins.lfslocal;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
-import org.eclipse.jgit.lfs.server.fs.FileLfsRepository;
-
+import com.google.common.base.Strings;
 import com.google.gerrit.extensions.annotations.PluginCanonicalWebUrl;
 import com.google.gerrit.extensions.annotations.PluginData;
+import com.google.gerrit.extensions.annotations.PluginName;
+import com.google.gerrit.server.config.PluginConfig;
+import com.google.gerrit.server.config.PluginConfigFactory;
 import com.google.inject.Inject;
 
+import org.eclipse.jgit.lfs.server.fs.FileLfsRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class LocalLargeFileRepository extends FileLfsRepository {
+  private static final Logger LOG = LoggerFactory.getLogger(LocalLargeFileRepository.class);
 
   @Inject
-  LocalLargeFileRepository(@PluginCanonicalWebUrl String url,
-      @PluginData Path dataDir) throws IOException {
-    super(url, dataDir);
+  LocalLargeFileRepository(PluginConfigFactory cfg,
+      @PluginName String pluginName,
+      @PluginCanonicalWebUrl String url,
+      @PluginData Path defaultDataDir) throws IOException {
+    super(url, getDataDir(cfg, pluginName, defaultDataDir));
+  }
+
+  private static Path getDataDir(PluginConfigFactory cfgFactory, String pluginName,
+      Path defaultDataDir) {
+    PluginConfig cfg = cfgFactory.getFromGerritConfig(pluginName);
+    String dataDir = cfg.getString("dataDirectory", null);
+    if (Strings.isNullOrEmpty(dataDir)) {
+      return defaultDataDir;
+    }
+
+    try {
+      Path dataPath = Paths.get(dataDir);
+      return Files.createDirectories(dataPath);
+    } catch (IOException e) {
+      LOG.warn("Ensuring data directory '{}' for plugin '{}' failed."
+          + " Falling back to default data directory '{}'.",
+          dataDir, pluginName, defaultDataDir, e);
+      return defaultDataDir;
+    }
   }
 }
