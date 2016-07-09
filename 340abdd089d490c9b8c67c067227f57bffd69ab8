@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3a53f056_788aa12f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-09T07:05:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a87c4d1_41c2b2f7",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 12
+      },
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a87c4d1_a1b05e9d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 2
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "3a53f056_38802910",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-09T07:05:57Z",
+      "side": 1,
+      "message": "Per JavaDoc to the method:\n\"Creates a directory by creating all nonexistent parent directories first. Unlike the createDirectory method, an exception is not thrown if the directory could not be created because it already exists.\" - we are safe here :) apart from that I gave +1 V - which means that I have tested it multiple times ;)",
+      "parentUuid": "5a87c4d1_a1b05e9d",
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8488cc_e2b6669b",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 2
@@ -53,6 +95,30 @@
       "writtenOn": "2016-07-08T15:42:31Z",
       "side": 1,
       "message": "Ensuring\n\nOr why not \"Creating data directory...\"",
+      "range": {
+        "startLine": 57,
+        "startChar": 16,
+        "endLine": 57,
+        "endChar": 24
+      },
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a562c46_37803810",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-09T07:05:57Z",
+      "side": 1,
+      "message": "Considering above I would like to still call it: \"Ensuring\" :)",
+      "parentUuid": "7a8488cc_e2b6669b",
       "range": {
         "startLine": 57,
         "startChar": 16,
@@ -94,6 +160,42 @@
       "side": 1,
       "message": "also mention explicitly what the default data directory is",
       "parentUuid": "5a87c4d1_e1b6669b",
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a53f056_18856520",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-09T07:05:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a87c4d1_e1b6669b",
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a562c46_17853420",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-09T07:05:57Z",
+      "side": 1,
+      "message": "line 15 provides explicitly this directory. @PLUGIN@ gets resolved to current plugin name when page is displayed...",
+      "parentUuid": "5a87c4d1_e13186fb",
       "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
