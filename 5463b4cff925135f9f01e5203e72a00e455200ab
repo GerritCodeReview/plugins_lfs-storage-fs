@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a53f056_b8bc39cb",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-07-10T09:55:53Z",
+      "side": 1,
+      "message": "This means that if one configures a custom dataDirectory but it cannot be created the plugin will happily use the defaultDataDir. I don\u0027t think that any sane Gerrit admin wants this behaviour. For example, we provide a 2TB disk for the LFS storage, configure the \"dataDirectory\" to point to that disk but fail to setup file permissions properly. Then we end-up using the default DataDir without necessarily noticing it.",
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
