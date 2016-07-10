@@ -84,6 +84,24 @@
     },
     {
       "key": {
+        "uuid": "3a53f056_58a87d88",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-07-10T09:55:53Z",
+      "side": 1,
+      "message": "OK, thanks for clarification",
+      "parentUuid": "3a53f056_38802910",
+      "revId": "340abdd089d490c9b8c67c067227f57bffd69ab8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8488cc_e2b6669b",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 2
