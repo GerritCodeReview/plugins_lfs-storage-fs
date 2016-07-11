@@ -145,6 +145,30 @@
     },
     {
       "key": {
+        "uuid": "7a59e872_9ab96ddb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-07-11T14:43:08Z",
+      "side": 1,
+      "message": "\u003e Saving the first time failed, then I retyped the commend again and at the end both comments were saved.\n\nThis happens when the login session times out and the draft comment can\u0027t be saved.  IIRC it\u0027s saved in a cookie and reloaded after login, but the problem seems to be that the UI doesn\u0027t reload the draft.\n\nThis has happened to me a few times, but I never got round to writing a bug report.",
+      "parentUuid": "1a562c46_b7dba8f5",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a59e872_5a8fd53d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
