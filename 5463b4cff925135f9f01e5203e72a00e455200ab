@@ -97,6 +97,30 @@
     },
     {
       "key": {
+        "uuid": "1a562c46_97d824fa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-07-11T13:22:26Z",
+      "side": 1,
+      "message": "Btw, I am also OK with a plugin specific config file.",
+      "parentUuid": "1a562c46_b7dba8f5",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a59e872_5a8fd53d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
