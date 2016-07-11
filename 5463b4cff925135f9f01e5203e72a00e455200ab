@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "1a562c46_b7dba8f5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-07-11T13:21:31Z",
+      "side": 1,
+      "message": "Sorry this is two times basically the same comment...\n\nSaving the first time failed, then I retyped the commend again and at the end both comments were saved.",
+      "parentUuid": "3a53f056_78074170",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a59e872_5a8fd53d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
