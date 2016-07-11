@@ -121,6 +121,30 @@
     },
     {
       "key": {
+        "uuid": "1a562c46_d7e57cd7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-11T13:58:01Z",
+      "side": 1,
+      "message": "moved to its own file (fls-storage-fs.config) and [storage] section",
+      "parentUuid": "7a59e872_ba939166",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a59e872_5a8fd53d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
@@ -132,6 +156,24 @@
       "writtenOn": "2016-07-11T01:09:49Z",
       "side": 1,
       "message": "nit: Wrap long lines.",
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a53f056_181285ae",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-11T13:58:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a59e872_5a8fd53d",
       "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -161,6 +203,30 @@
     },
     {
       "key": {
+        "uuid": "3a53f056_9866953b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-11T13:58:01Z",
+      "side": 1,
+      "message": "these are 2 different objects...",
+      "parentUuid": "5a5c2464_598fe33d",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 51,
+        "endChar": 5
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a53f056_b8bc39cb",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
@@ -172,6 +238,24 @@
       "writtenOn": "2016-07-10T09:55:53Z",
       "side": 1,
       "message": "This means that if one configures a custom dataDirectory but it cannot be created the plugin will happily use the defaultDataDir. I don\u0027t think that any sane Gerrit admin wants this behaviour. For example, we provide a 2TB disk for the LFS storage, configure the \"dataDirectory\" to point to that disk but fail to setup file permissions properly. Then we end-up using the default DataDir without necessarily noticing it.",
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a53f056_f87351f7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-11T13:58:01Z",
+      "side": 1,
+      "message": "throwing exception here that will not allow plugin to load",
+      "parentUuid": "3a53f056_b8bc39cb",
       "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
@@ -201,6 +285,30 @@
     },
     {
       "key": {
+        "uuid": "3a53f056_d8700dee",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-11T13:58:01Z",
+      "side": 1,
+      "message": "method was renamed",
+      "parentUuid": "5a5c2464_b9939f66",
+      "range": {
+        "startLine": 53,
+        "startChar": 4,
+        "endLine": 61,
+        "endChar": 5
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a59e872_9a904d5b",
         "filename": "src/main/resources/Documentation/config.md",
         "patchSetId": 4
@@ -212,6 +320,30 @@
       "writtenOn": "2016-07-11T01:09:49Z",
       "side": 1,
       "message": "\"If not configured, defaults to the plugin\u0027s data directory\"",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 69
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a53f056_385f8960",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2016-07-11T13:58:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a59e872_9a904d5b",
       "range": {
         "startLine": 15,
         "startChar": 0,
