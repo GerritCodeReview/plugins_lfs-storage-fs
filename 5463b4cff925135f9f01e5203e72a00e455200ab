@@ -25,6 +25,54 @@
     },
     {
       "key": {
+        "uuid": "3a53f056_78074170",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-07-11T13:18:00Z",
+      "side": 1,
+      "message": "As always it is a trade-off between the convenience of using gerrit.config and using own config file. IMHO, As long as the number of options is low we can keep using gerrit.config.\nAnother advantage of using gerrit.config is the out-of-the-bx UI support for project specific plugin config options.",
+      "parentUuid": "7a59e872_ba939166",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a562c46_f7cfe060",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-07-11T13:18:00Z",
+      "side": 1,
+      "message": "IMHO, as long as the number of config parameters is low we can keep convenience of using gerrit.config. An advantage of using gerrit.config is also the out-of-the-box UI support for project specific plugin config options.",
+      "parentUuid": "7a59e872_ba939166",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a59e872_5a8fd53d",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
