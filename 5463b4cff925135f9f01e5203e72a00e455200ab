@@ -2,6 +2,69 @@
   "comments": [
     {
       "key": {
+        "uuid": "7a59e872_ba939166",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-07-11T01:09:49Z",
+      "side": 1,
+      "message": "Would it be better to have this in the plugin\u0027s own config file, i.e. `/etc/git-lfs-fs.config`?",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a59e872_5a8fd53d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-07-11T01:09:49Z",
+      "side": 1,
+      "message": "nit: Wrap long lines.",
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5c2464_598fe33d",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-07-11T01:09:49Z",
+      "side": 1,
+      "message": "Use MoreObjects.firstNonNull:\n\n  return firstNonNull(dataDir, defaultDataDir)",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 51,
+        "endChar": 5
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a53f056_b8bc39cb",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
         "patchSetId": 4
@@ -13,6 +76,52 @@
       "writtenOn": "2016-07-10T09:55:53Z",
       "side": 1,
       "message": "This means that if one configures a custom dataDirectory but it cannot be created the plugin will happily use the defaultDataDir. I don\u0027t think that any sane Gerrit admin wants this behaviour. For example, we provide a 2TB disk for the LFS storage, configure the \"dataDirectory\" to point to that disk but fail to setup file permissions properly. Then we end-up using the default DataDir without necessarily noticing it.",
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5c2464_b9939f66",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/lfslocal/LocalLargeFileRepository.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-07-11T01:09:49Z",
+      "side": 1,
+      "message": "This means that the method is actually creating the directory, which would not be expected from a method named only `getDataDir`.\n\nI would either move this to a separate method, or rename this method.",
+      "range": {
+        "startLine": 53,
+        "startChar": 4,
+        "endLine": 61,
+        "endChar": 5
+      },
+      "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a59e872_9a904d5b",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-07-11T01:09:49Z",
+      "side": 1,
+      "message": "\"If not configured, defaults to the plugin\u0027s data directory\"",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 69
+      },
       "revId": "5463b4cff925135f9f01e5203e72a00e455200ab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
